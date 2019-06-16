@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5A52FF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorLetra">#FFFFFF</color>
+    <color name="colorFundoBotao">#47525E</color>
+    <color name="colorFundoTextoChat">#14FFE6FF</color>
+</resources>

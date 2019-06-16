@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundoTextoChat">
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:text="Cadastro"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="328dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="572dp"
+        android:hint="@string/nome"
+        android:imeOptions="actionNext"
+        android:inputType="textImeMultiLine"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/telefone"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/telefone"
+        android:inputType="phone"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        app:met_mask="(##) #####-####" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="328dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="240dp"
+        android:hint="@string/email"
+        android:imeOptions="actionDone"
+        android:inputType="textImeMultiLine|textEmailAddress"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/telefone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/screen_border"
+        android:onClick="cancelar"
+        android:text="CANCELAR"
+        android:textColor="@color/colorLetra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/cadastrar"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58dp"
+        android:background="@drawable/screen_border"
+        android:onClick="cadastrar"
+        android:text="CADASTRAR"
+        android:textColor="@color/colorLetra"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cancelar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

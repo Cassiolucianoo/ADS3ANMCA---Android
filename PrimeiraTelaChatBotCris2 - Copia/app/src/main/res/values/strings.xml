@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cris - ChatBot</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Celular</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="digiteaqui">Digite Aqui...</string>
+    <string name="enviar">Enviar</string>
+</resources>
